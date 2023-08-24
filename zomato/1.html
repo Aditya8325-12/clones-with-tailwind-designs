@@ -1,0 +1,687 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200;400&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <style>
+    .font{
+        font-family: 'Lato', sans-serif;
+    }
+        .bg-bg {
+            height: 60vh;
+
+            background-image: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+        }
+
+        .bg-b1 {
+            background-image: url('https://b.zmtcdn.com/webFrontend/64dffaa58ffa55a377cdf42b6a690e721585809275.png?fit=around|402:360&crop=402:360;*,*');
+        }
+
+        .bg-b2 {
+            background-image: url('https://b.zmtcdn.com/webFrontend/95f005332f5b9e71b9406828b63335331585809309.png?fit=around|402:360&crop=402:360;*,*');
+        }
+
+        .bg-b3 {
+            background-image: url('https://b.zmtcdn.com/data/collections/cc6ea486370806c8c9b4704f0854e243_1539668755.jpg?output-format=webp');
+        }
+
+        .bg-b4 {
+            background-image: url('https://b.zmtcdn.com/data/collections/5ac5eeae0796f422298ee67d5b66a025_1535368421.jpg?output-format=webp');
+        }
+
+        .bg-b5 {
+            background-image: url('https://b.zmtcdn.com/data/collections/5ac5eeae0796f422298ee67d5b66a025_1535368421.jpg?output-format=webp');
+        }
+
+        .bg-b6 {
+            background-image: url('https://b.zmtcdn.com/data/collections/2e5c5dc79d4b465797c8e425d814f42c_1582256432.jpg?output-format=webp');
+        }
+
+        .bg-b7 {
+            background-image: url('https://b.zmtcdn.com/data/collections/1b8c164e8a18878468d8aabeb0b486b1_1625812715.jpg?output-format=webp');
+        }
+    </style>
+</head>
+
+<body>
+    <div  class=" bg-bg bg-cover  w-full bg-center flex items-center flex-col bg-blue-600 font-serif text-white bg-no-repeat">
+        <nav class="h-14 w-full max-w-6xl xl:w-11/12 lg:w-11/12 px-5 flex justify-between items-center">
+            <div class="md:hidden sm:hidden xl:flex lg:flex cursor-pointer">Get The App</div>
+            <div class="xl:hidden lg:hidden cursor-pointer">
+                <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+            <div class="hidden xl:flex lg:flex">
+                <ul class="flex cursor-pointer gap-4">
+                    <li class="hover:text-blue-300">Add Restaurant</li>
+                    <li class="hover:text-blue-300">Log in</li>
+                    <li class="hover:text-blue-300">sign up</li>
+                </ul>
+            </div>
+        </nav>
+        <div
+            class="max-w-6xl flex mt-12 xl:m-0 lg:m-0 sm:m-0 md:m-0 font-serif flex-col justify-center items-center w-full xl:w-9/12 lg:w-9/12 md:w-9/12 sm:w-9/12 h-80">
+            <img class="xl:w-64 lg:w-64 sm:w-64 w-32 "
+                src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png"
+                class="high-res-image" alt="" role="presentation">
+            <div
+                class="flex flex-col sm:mt-6 md:mt-6 items-center lg:flex-row xl:flex-row sm:flex-col md:flex-col text-lg lg:text-4xl sm:text-3xl md:text-3xl xl:text-4xl font-sans xl:gap-2 lg:gap-2 mt-4">
+                <p class="">Discover the best food &amp; drinks in</p>
+                <p class="font-sans">Aurangabad</p>
+            </div>
+            <div class="hidden xl:flex md:flex lg:flex sm:flex rounded-lg mt-10 bg-white w-9/12">
+                <div class="h-12 w-12 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#FF7E8B" width="20" height="20" viewBox="0 0 20 20"
+                        aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iRDDBk">
+                        <title>location-fill</title>
+                        <path
+                            d="M10.2 0.42c-4.5 0-8.2 3.7-8.2 8.3 0 6.2 7.5 11.3 7.8 11.6 0.2 0.1 0.3 0.1 0.4 0.1s0.3 0 0.4-0.1c0.3-0.2 7.8-5.3 7.8-11.6 0.1-4.6-3.6-8.3-8.2-8.3zM10.2 11.42c-1.7 0-3-1.3-3-3s1.3-3 3-3c1.7 0 3 1.3 3 3s-1.3 3-3 3z">
+                        </path>
+                    </svg>
+                </div>
+                <input class="py-3 text-gray-500 outline-none rounded-lg" type="text" placeholder="aurangabad">
+                <h1 class="text-gray-600 mt-2 text-2xl items-center">|</h1>
+                <div class="h-12 w-12 flex items-center justify-center">
+                    <svg class="items-center" xmlns="http://www.w3.org/2000/svg" fill="#828282" width="20" height="20"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>Search</title>
+                        <path
+                            d="M19.78 19.12l-3.88-3.9c1.28-1.6 2.080-3.6 2.080-5.8 0-5-3.98-9-8.98-9s-9 4-9 9c0 5 4 9 9 9 2.2 0 4.2-0.8 5.8-2.1l3.88 3.9c0.1 0.1 0.3 0.2 0.5 0.2s0.4-0.1 0.5-0.2c0.4-0.3 0.4-0.8 0.1-1.1zM1.5 9.42c0-4.1 3.4-7.5 7.5-7.5s7.48 3.4 7.48 7.5-3.38 7.5-7.48 7.5c-4.1 0-7.5-3.4-7.5-7.5z">
+                        </path>
+                    </svg>
+                </div>
+                <input class=" outline-none py-3 w-8/12 text-gray-500 rounded-lg" type="text"
+                    placeholder="search for restaurant  ,cusions and dish">
+            </div>
+            <div class="w-full xl:hidden sm:hidden md:hidden lg:hidden flex items-center flex-col justify-center">
+                <div class="flex rounded-lg mt-4 bg-white w-11/12">
+                    <div class="h-12 w-12 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#FF7E8B" width="20" height="20"
+                            viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
+                            class="sc-rbbb40-0 iRDDBk">
+                            <title>location-fill</title>
+                            <path
+                                d="M10.2 0.42c-4.5 0-8.2 3.7-8.2 8.3 0 6.2 7.5 11.3 7.8 11.6 0.2 0.1 0.3 0.1 0.4 0.1s0.3 0 0.4-0.1c0.3-0.2 7.8-5.3 7.8-11.6 0.1-4.6-3.6-8.3-8.2-8.3zM10.2 11.42c-1.7 0-3-1.3-3-3s1.3-3 3-3c1.7 0 3 1.3 3 3s-1.3 3-3 3z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input class="py-3 text-gray-500 outline-none rounded-lg" type="text" placeholder="aurangabad">
+                </div>
+                <div class="flex  rounded-lg mt-2 bg-white w-11/12">
+                    <div class="h-12 w-12 flex items-center justify-center">
+                        <svg class="items-center" xmlns="http://www.w3.org/2000/svg" fill="#828282" width="20"
+                            height="20" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                            <title>Search</title>
+                            <path
+                                d="M19.78 19.12l-3.88-3.9c1.28-1.6 2.080-3.6 2.080-5.8 0-5-3.98-9-8.98-9s-9 4-9 9c0 5 4 9 9 9 2.2 0 4.2-0.8 5.8-2.1l3.88 3.9c0.1 0.1 0.3 0.2 0.5 0.2s0.4-0.1 0.5-0.2c0.4-0.3 0.4-0.8 0.1-1.1zM1.5 9.42c0-4.1 3.4-7.5 7.5-7.5s7.48 3.4 7.48 7.5-3.38 7.5-7.48 7.5c-4.1 0-7.5-3.4-7.5-7.5z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input class=" outline-none py-3 w-full text-gray-500 text-base rounded-lg" type="text"
+                        placeholder="search for resturent ,cusions and dish">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-7 flex items-center justify-center w-full ">
+        <div
+            class="max-w-6xl w-11/12 gap-4 flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row flex justify-center">
+            <div class="max-w-6xl w-full lg:mt-4 xl:mt-4 md:mt-4 sm:mt-4 flex gap-4 justify-center">
+                <div
+                    class="flex items-end bg-no-repeat bg-cover  max-w-md w-6/12 bg-b1 lg:h-80 sm:h-80 md:h-80 xl:h-80 h-40 bg-white rounded-2xl border-2 ">
+                      <div class="p-2  xl:h-24 lg:h-24 md:h-24 sm-24 h-12 w-full bg-white rounded-b-2xl">
+                          <h1 class="text-sm xl:text-2xl lg:text-2xl md:text-2xl  sm:text-2xl text-gray-600">orader food
+                              Online</h1>
+                          <p class="hidden  text-base xl:flex  md:flex lg:flex sm:flex  text-gray-400">stay home and orader to
+                              doorstoop</p>
+                          <p class="text-xs    xl:hidden md:hidden  lg:hidden  sm:hidden  text-gray-400">stay home and
+                              orader...</p>
+                      </div>
+                </div>
+                <div
+                    class="flex items-end bg-no-repeat bg-cover border border-gray-50 outline-none max-w-md w-6/12 bg-b2 lg:h-80 sm:h-80 md:h-80 xl:h-80 h-40 bg-white rounded-2xl">
+                      <div class="p-2  xl:h-24 lg:h-24 md:h-24 sm-24 h-12 w-full bg-white rounded-b-2xl border-2">
+                          <h1 class="text-sm xl:text-2xl lg:text-2xl md:text-2xl  sm:text-2xl text-gray-600">Go out for meal</h1>
+                          <p class="hidden  text-base xl:flex  md:flex lg:flex sm:flex  text-gray-400">View the city's favourite dining venues</p>
+                          <p class="text-xs    xl:hidden md:hidden  lg:hidden  sm:hidden  text-gray-400">View the city's...</p>
+                      </div>
+                </div>
+            </div>
+            <div
+                class="mt-4 flex items-end bg-no-repeat bg-cover  max-w-md w-6/12 bg-b3 lg:h-80 sm:h-80 md:h-80 xl:h-80 h-40 bg-white rounded-2xl border-2">
+                <div class="p-2  xl:h-24 lg:h-24 md:h-24 sm-24 h-12 w-full bg-white rounded-b-2xl">
+                    <h1 class="text-sm xl:text-2xl lg:text-2xl md:text-2xl  sm:text-2xl text-gray-600">Zomato PRO </h1>
+                    <p class="hidden  text-base xl:flex  md:flex lg:flex sm:flex  text-gray-400">Enjoy limitless dining privileges</p>
+                    <p class="text-xs    xl:hidden md:hidden  lg:hidden  sm:hidden  text-gray-400">Enjoy limitless dining...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-16 flex items-center justify-center w-full">
+        <div class="max-w-6xl w-11/12 flex">
+            <div class="text-white w-full flex items-end justify-between">
+                <div class="flex flex-col font-sans justify-start">
+                    <h1 class="text-gray-600 text-3xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-6xl">Collections</h1>
+                    <p class="text-gray-400 text-sm xl:text-lg lg:text-lg md:text-base sm:text-base ">Explore curated
+                        lists of top restaurants, cafes, pubs, and bars in Aurangabad, based on trends</p>
+                </div>
+                <div class="font-serif xl:flex lg:flex sm:flex md:flex hidden">
+                    <h1 class="text-red-500 text-xl">All collections in Aurangabad</h1>
+                    <div class="w-6 h-6 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#FF7E8B" width="20" height="20"
+                            viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
+                            class="sc-rbbb40-0 ezrcri">
+                            <title>right-triangle</title>
+                            <path d="M5 0.42l10 10-10 10v-20z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-7 flex items-center justify-center w-full">
+        <div
+            class="max-w-6xl w-11/12 gap-4 flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row flex justify-center">
+            <div class="max-w-6xl w-full lg:mt-4 xl:mt-4 md:mt-4 sm:mt-4 flex gap-4 justify-center">
+                <div
+                    class="flex items-end bg-no-repeat bg-cover max-w-md w-3/6 bg-b5 h-44 lg:h-96 xl:h-96 md:h-72 sm:h-72  bg-white rounded-2xl">
+                    <div
+                        class="p-2 xl:text-lg lg:text-lg text-sm sm:text-sm md:text-sm font-serif  lg:h-66 xl:h-66 md:h-66 sm:h-66 w-full rounded-b-2xl">
+                        <h1 class="text-white  font-sans">treandiing this week</h1>
+                        <p class="text-white  font-sans">26-place</p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-end bg-no-repeat bg-cover max-w-md w-3/6 bg-b6 h-44 lg:h-96 xl:h-96 md:h-72 sm:h-72 bg-white rounded-2xl">
+                    <div
+                        class="p-2 xl:text-lg lg:text-lg text-sm sm:text-sm md:text-sm font-serif  w-full rounded-b-2xl">
+                        <h1 class="text-white  font-sans">Best of Aurangabd</h1>
+                        <p class="text-white  font-sans">place 9</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-4 max-w-6xl w-full">
+                <div
+                    class="mt-4 flex items-end bg-no-repeat bg-cover max-w-md w-4/6 bg-b7 h-44 lg:h-96 xl:h-96 md:h-72 sm:h-72 rounded-2xl">
+                    <div
+                        class="p-2 sm:text-sm md:text-sm xl:text-lg lg:text-lg text-sm font-serif w-full rounded-b-2xl">
+                        <h1 class="text-white font-sans">veggie frindly</h1>
+                        <p class="text-white font-sans ">11 place</p>
+                    </div>
+                </div>
+                <div
+                    class="mt-4 flex items-end bg-no-repeat bg-cover max-w-md w-4/6 bg-b4 h-44 lg:h-96 xl:h-96 md:h-72 sm:h-72 rounded-2xl">
+                    <div
+                        class="p-2 sm:text-sm md:text-sm xl:text-lg lg:text-lg text-sm font-serif  w-full text-white rounded-b-2xl">
+                        <h1 class="text-white text-lg sm:text-xl md:text-xl xl:text-2xl lg:text-2xl font-sans">Pocate
+                            friendley</h1>
+                        <p class="text-white font-sans">5 place</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-center w-full">
+        <div class="max-w-6xl h-5/6 w-11/12 gap-4 flex items-center justify-center">
+            <div class="lg:text-5xl xl:text-5xl sm:text-3xl md:text-3xl text-2xl mt-24 text-gray-600">Popular localities
+                in and around Aurangabad</div>
+        </div>
+    </div>
+    <div class="mt-10 flex items-center justify-center w-full">
+        <div class="max-w-6xl w-11/12 gap-4 flex flex-col items-center">
+            <div class="flex flex-col xl:flex md:flex-row lg:flex-row sm:flex-row gap-5 w-full">
+                <div
+                    class="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:6/12 w-full h-14 flex items-center justify-between px-3 border border-gray-400 rounded-xl bg-white">
+                    <h1 class="text-xl sm:text-lg md:text-lg text-gray-500 font-sans">CIDCO 404 place</h1>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="25" height="25"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>chevron-right</title>
+                        <path
+                            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+                        </path>
+                    </svg>
+                </div>
+                <div
+                    class="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:6/12 w-full h-14 flex items-center justify-between px-3 border border-gray-400 rounded-xl bg-white">
+                    <h1 class="text-xl sm:text-lg md:text-lg text-gray-500 font-sans">CIDCO 404 place</h1>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="25" height="25"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>chevron-right</title>
+                        <path
+                            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+                        </path>
+                    </svg>
+                </div>
+                <div
+                    class="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:6/12 w-full h-14 flex items-center justify-between px-3 border border-gray-400 rounded-xl bg-white">
+                    <h1 class="text-xl sm:text-lg md:text-lg text-gray-500 font-sans">CIDCO 404 place</h1>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="25" height="25"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>chevron-right</title>
+                        <path
+                            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="flex flex-col xl:flex md:flex-row lg:flex-row sm:flex-row gap-5 w-full">
+                <div
+                    class="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:6/12 w-full h-14 flex items-center justify-between px-3 border border-gray-400 rounded-xl bg-white">
+                    <h1 class="text-xl sm:text-lg md:text-lg text-gray-500 font-sans">CIDCO 404 place</h1>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="25" height="25"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>chevron-right</title>
+                        <path
+                            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+                        </path>
+                    </svg>
+                </div>
+                <div
+                    class="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:6/12 w-full h-14 flex items-center justify-between px-3 border border-gray-400 rounded-xl bg-white">
+                    <h1 class="text-xl sm:text-lg md:text-lg text-gray-500 font-sans">CIDCO 404 place</h1>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="25" height="25"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>chevron-right</title>
+                        <path
+                            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+                        </path>
+                    </svg>
+                </div>
+                <div
+                    class="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:6/12 w-full h-14 flex items-center justify-between px-3 border border-gray-400 rounded-xl bg-white">
+                    <h1 class="text-xl sm:text-lg md:text-lg text-gray-500 font-sans">CIDCO 404 place</h1>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="25" height="25"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>chevron-right</title>
+                        <path
+                            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="flex flex-col xl:flex md:flex-row lg:flex-row sm:flex-row gap-5 w-full">
+                <div
+                    class="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:6/12 w-full h-14 flex items-center justify-between px-3 border border-gray-400 rounded-xl bg-white">
+                    <h1 class="text-xl sm:text-lg md:text-lg text-gray-500 font-sans">CIDCO 404 place</h1>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="25" height="25"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>chevron-right</title>
+                        <path
+                            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+                        </path>
+                    </svg>
+                </div>
+                <div
+                    class="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:6/12 w-full h-14 flex items-center justify-between px-3 border border-gray-400 rounded-xl bg-white">
+                    <h1 class="text-xl sm:text-lg md:text-lg text-gray-500 font-sans">CIDCO 404 place</h1>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="25" height="25"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>chevron-right</title>
+                        <path
+                            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+                        </path>
+                    </svg>
+                </div>
+                <div
+                    class="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:6/12 w-full h-14 flex items-center justify-between px-3 border border-gray-400 rounded-xl bg-white">
+                    <h1 class="text-xl sm:text-lg md:text-lg text-gray-500 font-sans">CIDCO 404 place</h1>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="25" height="25"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>chevron-right</title>
+                        <path
+                            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="flex flex-col xl:flex md:flex-row lg:flex-row sm:flex-row gap-5 w-full">
+                <div
+                    class="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:6/12 w-full h-14 flex items-center justify-between px-3 border border-gray-400 rounded-xl bg-white">
+                    <h1 class="text-xl sm:text-lg md:text-lg text-gray-500 font-sans">CIDCO 404 place</h1>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="25" height="25"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>chevron-right</title>
+                        <path
+                            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+                        </path>
+                    </svg>
+                </div>
+                <div
+                    class="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:6/12 w-full h-14 flex items-center justify-between px-3 border border-gray-400 rounded-xl bg-white">
+                    <h1 class="text-xl sm:text-lg md:text-lg text-gray-500 font-sans">CIDCO 404 place</h1>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="25" height="25"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>chevron-right</title>
+                        <path
+                            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+                        </path>
+                    </svg>
+                </div>
+                <div
+                    class="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:6/12 w-full h-14 flex items-center justify-between px-3 border border-gray-400 rounded-xl bg-white">
+                    <h1 class="text-xl sm:text-lg md:text-lg text-gray-500 font-sans">CIDCO 404 place</h1>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="25" height="25"
+                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                        <title>chevron-right</title>
+                        <path
+                            d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-center w-full">
+        <div class="max-w-6xl h-5/6 w-11/12 gap-4 flex items-center justify-center">
+            <div class="w-64 mt-16 hidden lg:flex xl:flex md:flex sm:flex">
+                <img class="h-full" src="https://b.zmtcdn.com/data/pro/5722d9e687511d79616bcab92470734e1596187147.png"
+                    alt="">
+            </div>
+            <div class="mt-11 h-full">
+                <div class="text-gray-400">
+                    <h1
+                        class="text-2xl lg:text-5xl md:text-5xl sm:text-5xl xl:text-5xl flex justify-center xl:justify-start md:justify-start lg:justify-start sm:justify-start text-gray-600 font-sans">
+                        Get The Zomato App</h1>
+                    <p
+                        class="text-2xl hidden xl:flex md:flex sm:flex lg:flex justify-start font-sans text-gray-500 mt-4">
+                        We will send you a link, open it on your phone to download the app</p>
+                    <p
+                        class="text-lg flex xl:hidden md:hidden lg:hidden sm:hidden justify-center font-sans text-gray-500 mt-4">
+                        We will send you a link, open it on your</p>
+                    <p
+                        class="text-lg flex xl:hidden md:hidden lg:hidden sm:hidden justify-center font-sans text-gray-500">
+                        phone to download the app</p>
+                    <div class="flex gap-10 md:gap-20 sm:gap-20 lg:gap-20 xl:gap-20">
+                        <div class="flex ml-5 xl:ml-0 lg:ml-0 md:ml-0 sm:ml-0 gap-3 items-center">
+                            <div class="w-5 h-5 border-2 rounded-full border-gray-500 mt-6"></div>
+                            <h1 class="mt-5 text-2xl font-sans text-gray-500">Email</h1>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <div class="w-5 h-5 border-2 rounded-full border-gray-500 mt-6"></div>
+                            <h1 class="mt-5 text-2xl font-sans text-gray-500">Phone</h1>
+                        </div>
+                    </div>
+                    <div class="mt-8 hidden lg:flex xl:flex md:flex sm:flex gap-6">
+                        <input
+                            class="py-4 px-4 w-6/12 border border-gray-300 rounded-lg placeholder:text-gray-400 text-xl"
+                            type="email" placeholder="Email">
+                        <button class="text-gray-300 px-6 rounded-md bg-red-400 hover:bg-red-500">Share app
+                            Link</button>
+                    </div>
+                    <div class="mt-8 xl:hidden lg:hidden sm:hidden md:hidden flex gap-6">
+                        <input
+                            class="py-2 px-4 w-52 border border-gray-300 rounded-lg placeholder:text-gray-400 text-xl"
+                            type="email" placeholder="Email">
+                        <button class="text-gray-300 px-6 rounded-md bg-red-400 hover:bg-red-500">Share</button>
+                    </div>
+                    <h1
+                        class="my-3 flex justify-center xl:justify-start md:justify-start lg:justify-start sm:justify-start text-gray-500">
+                        Download app from</h1>
+                    <div
+                        class="flex justify-center xl:justify-start md:justify-start lg:justify-start sm:justify-start gap-2 mt-4">
+                        <img class="xl:h-14 md:h-14 sm:h-14 lg:h-14 h-10 w-36"
+                            src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+                            alt="">
+                        <img class="xl:h-14 md:h-14 sm:h-14 lg:h-14 h-10 w-36"
+                            src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 xl:mt-10 sm:mt-8 lg:mt-10 md:mt-6  flex items-center justify-center w-full">
+        <div class="max-w-6xl w-11/12 gap-4 flex-col items-center">
+            <div class=" ">
+                <p
+                    class="text-2xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl text flex text-gray-600 justify-start">
+                    Explore other options for you here</p>
+                <p
+                    class="text-xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-2xl mt-11 flex text-gray-500 justify-start">
+                    Popular cuisines near me</p>
+                <div
+                    class="mt-4 xl:mt-11 lg:mt-11 md:mt-8 sm:mt-8 text-base xl:text-xl lg:text-xl md:text-lg font-sans text-gray-500">
+                    Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near
+                    meContinental food near meDesserts food near meIce Cream food near meKebab food near meLebanese food
+                    near meMaharashtrian food near meMomos food near meMughlai food near meNorth Indian food near
+                    mePizza food near meRolls food near meSandwich food near meShake food near meSouth Indian food near
+                    meStreet food near me</div>
+            </div>
+            <div class="mt-11">
+                <p class="text-xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-2xl flex justify-start text-gray-500">
+                    Popular restaurant types near me</p>
+                <div
+                    class="mt-4 xl:mt-11 lg:mt-11 md:mt-8 sm:mt-8 text-base xl:text-xl lg:text-xl md:text-lg sm:text-lg  font-sans text-gray-500">
+                    Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near
+                    meContinental food near meDesserts food near meIce Cream food near meKebab food near meLebanese food
+                    near meMaharashtrian food near meMomos food near meMughlai food near meNorth Indian food near
+                    mePizza food near meRolls food near meSandwich food near meShake food near meSouth Indian food near
+                    meStreet food near me</div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <div class="mt-4 xl:mt-10 sm:mt-8 lg:mt-10 md:mt-6  flex items-center justify-center w-full">
+        <div class="max-w-6xl w-11/12 gap-4 flex-col items-center">
+            <div>
+                <h1 class="text-3xl text-gray-500">Top Restaurant Chains</h1>
+                <div class="text-xl flex gap-32 mt-7 text-gray-400 ">
+                    <div class="hover:text-gray-700">
+                        KFC
+                    </div>
+                    <div class="hover:text-gray-700">
+                        Pizaa hut
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 ">
+                <h1 class="text-3xl text-gray-500">Cities We Deliver To</h1>
+            </div>
+            <div class="flex gap-40 lg:gap-52 xl:gap-60 md:gap-56  mt-9 text-xl text-gray-500">
+                <div>
+                    <ul class=" ">
+                        <li class="">Delhi </li>
+                        <li class="mt-2">Pune</li>
+                        <li class="mt-2">luru</li>
+                        <li class="mt-2">Benga</li>
+                        <li class="mt-2">Mumbai</li>
+                        <li class="mt-2">Kolkata</li>
+                        <li class="mt-2">NCR</li>
+                        <li class="mt-2">Pune</li>
+                        <li class="mt-2">luru</li>
+                        <li class="mt-2">Benga</li>
+                        <li class="mt-2">Mumbai</li>
+                        <li class="mt-2">Kolkata</li>
+                        <li class="mt-2">NCR</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class=" ">
+                        <li class="">Delhi </li>
+                        <li class="mt-2">Pune</li>
+                        <li class="mt-2">luru</li>
+                        <li class="mt-2">Benga</li>
+                        <li class="mt-2">Mumbai</li>
+                        <li class="mt-2">Kolkata</li>
+                        <li class="mt-2">NCR</li>
+                        <li class="mt-2">Pune</li>
+                        <li class="mt-2">luru</li>
+                        <li class="mt-2">Benga</li>
+                        <li class="mt-2">Mumbai</li>
+                        <li class="mt-2">Kolkata</li>
+                        <li class="mt-2">NCR</li>
+                    </ul>
+                </div>
+                <div class="hidden xl:flex  md:flex lg:flex ">
+                    <ul class=" ">
+                        <li class="">Delhi </li>
+                        <li class="mt-2">Pune</li>
+                        <li class="mt-2">luru</li>
+                        <li class="mt-2">Benga</li>
+                        <li class="mt-2">Mumbai</li>
+                        <li class="mt-2">Kolkata</li>
+                        <li class="mt-2">NCR</li>
+                        <li class="mt-2">Pune</li>
+                        <li class="mt-2">luru</li>
+                        <li class="mt-2">Benga</li>
+                        <li class="mt-2">Mumbai</li>
+                        <li class="mt-2">Kolkata</li>
+                        <li class="mt-2">NCR</li>
+                    </ul>
+                </div>
+                <div class="hidden xl:flex   lg:flex ">
+                    <ul class=" ">
+                        <li class="">Delhi </li>
+                        <li class="mt-2">Pune</li>
+                        <li class="mt-2">luru</li>
+                        <li class="mt-2">Benga</li>
+                        <li class="mt-2">Mumbai</li>
+                        <li class="mt-2">Kolkata</li>
+                        <li class="mt-2">NCR</li>
+                        <li class="mt-2">Pune</li>
+                        <li class="mt-2">luru</li>
+                        <li class="mt-2">Benga</li>
+                        <li class="mt-2">Mumbai</li>
+                        <li class="mt-2">Kolkata</li>
+                        <li class="mt-2">NCR</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 xl:mt-10 sm:mt-8 lg:mt-10 md:mt-6  flex items-center justify-center w-full">
+        <div class="max-w-6xl w-11/12 gap-4 flex-col items-center">
+            <div
+                class="mt-4  flex flex-col gap-9 xl:justify-between md:justify-between sm:justify-between lg:justify-between  lg:flex-row sm:flex-row md:flex-row xl:flex-row   ">
+                <div>
+                    <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&amp;crop=198:42;*,*"
+                        alt="">
+                </div>
+                <div class="flex gap-4 lg:gap-6 xl:gap-6 md:gap-6 sm:gap-6  flex-row ">
+                    <button
+                        class="w-28 h-8 xl:w-44 xl:h-14 md:w-44 md:h-14 sm:w-44 sm:h-14 lg:w-44 lg:h-14 flex items-center xl:gap-9 lg:gap-9 sm:gap-9 md:gap-9 gap-2 justify-center border  border-gray-700  rounded-md  ">
+                        <img class="h-4  xl:h-8 lg:h-8 sm:h-8 md:h-8 rounded-md "
+                            src="https://img.icons8.com/color/2x/india.png" alt="">
+                        <div class="flex items-center gap-1">
+                            <h1 class="text-sm ">India</h1>
+                            <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15"
+                                viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                                <title>chevron-down</title>
+                                <path
+                                    d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z">
+                                </path>
+                            </svg>
+                        </div>
+                    </button>
+                    <button
+                        class="w-28 h-8 xl:w-44 xl:h-14 md:w-44 md:h-14 sm:w-44 sm:h-14 lg:w-44 lg:h-14 flex items-center gap-4 justify-center border  border-gray-700  rounded-md  ">
+                        <img class="h-4 xl:h-8 lg:h-8 sm:h-8 md:h-8 rounded-md "
+                            src="https://img.icons8.com/ios/2x/green-earth.png" alt="">
+                        <div class="flex items-center gap-1">
+                            <h1 class="text-sm xl:text-lg md:text-lg sm:text-lg lg:text-lg  ">English</h1>
+                            <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="12" height="12"
+                                viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img">
+                                <title>chevron-down</title>
+                                <path
+                                    d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z">
+                                </path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="mt-4 xl:mt-10 sm:mt-8 lg:mt-10 md:mt-6  flex items-center  justify-center w-full">
+      <div class="max-w-6xl w-11/12 ">
+        <div class="gap-4 xl:gap-36 lg:gap-36 md:gap-36 sm:gap-36   flex flex-col xl:flex-row md:flex-row  lg:flex-row sm:flex-row w-full ">
+            <div class=" flex gap-24">
+                <div >
+                  <ul>
+                    <li class="text-xl text-gray-800">Comapany</li>
+                    <li class="text-lg text-gray-600">Who weare</li>
+                    <li class="text-lg text-gray-600">Blog</li>
+                    <li class="text-lg text-gray-600">Careers</li>
+                    <li class="text-lg text-gray-600">Report Fraoud</li>
+                    <li class="text-lg text-gray-600">contacact</li>
+                    <li class="text-lg text-gray-600">investor relation</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>Comapany</li>
+                    <li>Who we are</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Report Fraoud</li>
+                    <li>contacact</li>
+                    <li>investor relation</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="">
+              <div class="gap-12 xl: lg:gap-24  lg:mt-0 xl:mt-0 md:mt-0 sm:mt-0 flex" >
+                <div class="flex flex-col justify-start">
+                  <div>
+                      <h1 class="text-xl text-gray-700">FOR RESTAURANTS</h1>
+                      <p class="text-gray-400 hover:text-gray-500">Add Restorant</p>
+                    </div> 
+                  <div>
+                      <h1 class="text-xl text-gray-700">For Enterpries</h1>
+                      <p class="mt-1 text-gray-400 hover:text-gray-500" > Zomato for Work</p>
+                    </div> 
+                </div>
+                <div>
+                  <ul>
+                    <h1 class="text-xl text-gray-700"> For You</h1>
+                    <li class="text-lg text-gray-600">privacey </li>
+                    <li class="text-lg text-gray-600">Terms </li>
+                    <li class="text-lg text-gray-600">Cecurity</li>
+                    <li class="text-lg text-gray-600">Sitemap</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-xl text-gray-700" >Social Links</h1>
+              <div class="mt-2 flex gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="22" height="22" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cvuzKA"><path d="M0 10C0 4.5 4.5 0 10 0C15.5 0 20 4.5 20 10C20 15.5 15.5 20 10 20C4.5 20 0 15.5 0 10ZM10.75 15.4375V10.1875H12.1875L12.375 8.375H10.75V7.5C10.75 7.0625 10.8125 6.8125 11.5 6.8125H12.375V5H10.9375C9.1875 5 8.625 5.875 8.625 7.3125V8.375H7.5V10.1875H8.5625V15.4375C8.5625 15.4375 10.75 15.4375 10.75 15.4375Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="22" height="22" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cvuzKA"><path d="M0 10C0 4.5 4.5 0 10 0C15.5 0 20 4.5 20 10C20 15.5 15.5 20 10 20C4.5 20 0 15.5 0 10ZM10.0625 8.125V8.5L9.6875 8.4375C8.3125 8.25 7.125 7.6875 6.125 6.6875L5.625 6.1875L5.5 6.5625C5.25 7.375 5.375 8.25 5.9375 8.8125C6.25 9.125 6.1875 9.1875 5.6875 9C5.5 8.9375 5.375 8.875 5.3125 8.9375C5.25 9 5.4375 9.6875 5.5625 9.9375C5.75 10.3125 6.1875 10.6875 6.5625 10.875L6.9375 11.0625H6.5C6.0625 11.0625 6.0625 11.0625 6.125 11.25C6.3125 11.75 6.875 12.25 7.5625 12.5L8 12.6875L7.625 12.9375C7 13.3125 6.3125 13.5 5.625 13.5C5.3125 13.5 5 13.5625 5 13.5625C5 13.625 5.9375 14.0625 6.4375 14.25C8.0625 14.75 9.9375 14.5 11.375 13.6875C12.375 13.0625 13.375 11.875 13.875 10.75C14.125 10.125 14.375 9 14.375 8.5C14.375 8.1875 14.4375 8.125 14.8125 7.6875C15.0625 7.4375 15.3125 7.1875 15.3125 7.0625C15.375 6.9375 15.375 6.9375 15 7.0625C14.375 7.3125 14.25 7.25 14.625 6.875C14.875 6.625 15.125 6.1875 15.125 6.0625C15.125 6.0625 15 6.0625 14.875 6.125C14.75 6.1875 14.4375 6.3125 14.1875 6.375L13.8125 6.5L13.5 6.25C13.3125 6.125 13 5.9375 12.875 5.9375C12.5 5.8125 11.9375 5.8125 11.5625 6C10.5625 6.25 10 7.1875 10.0625 8.125Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="22" height="22" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cvuzKA"><path d="M0 10C0 4.5 4.5 0 10 0C15.5 0 20 4.5 20 10C20 15.5 15.5 20 10 20C4.5 20 0 15.5 0 10ZM10.1875 5C8.8125 5 8.625 5 8.0625 5C7.5 5.0625 7.125 5.125 6.8125 5.25C6.5 5.375 6.1875 5.5625 5.875 5.875C5.5625 6.1875 5.375 6.4375 5.25 6.8125C5.125 7.125 5 7.5 5 8.0625C5 8.625 5 8.75 5 10.1875C5 11.625 5 11.8125 5.0625 12.375C5.0625 12.9375 5.1875 13.3125 5.3125 13.625C5.4375 13.9375 5.625 14.25 5.9375 14.5625C6.1875 14.8125 6.5 15 6.875 15.1875C7.1875 15.3125 7.5625 15.4375 8.125 15.4375C8.6875 15.4375 8.875 15.5 10.25 15.5C11.6875 15.5 11.875 15.5 12.4375 15.4375C13 15.375 13.375 15.3125 13.6875 15.1875C14 15.0625 14.3125 14.875 14.625 14.5625C14.9375 14.25 15.125 14 15.25 13.625C15.375 13.3125 15.5 12.875 15.5 12.375C15.5625 11.8125 15.5625 11.625 15.5625 10.1875C15.5625 8.75 15.5625 8.625 15.5 8.0625C15.5 7.5 15.375 7.125 15.25 6.8125C15.125 6.4375 14.9375 6.1875 14.625 5.875C14.375 5.625 14.0625 5.4375 13.6875 5.25C13.375 5.125 12.9375 5.0625 12.4375 5C11.8125 5 11.625 5 10.1875 5ZM9.75 5.9375C9.875 5.9375 10.0625 5.9375 10.1875 5.9375C11.5625 5.9375 11.75 5.9375 12.3125 5.9375C12.8125 5.9375 13.0625 6.0625 13.25 6.125C13.5 6.25 13.6875 6.375 13.875 6.5C14.0625 6.625 14.1875 6.8125 14.25 7.125C14.3125 7.3125 14.4375 7.5625 14.4375 8.0625C14.5 8.625 14.5 8.8125 14.5 10.1875C14.5 11.5625 14.5 11.75 14.4375 12.3125C14.4375 12.8125 14.3125 13.125 14.25 13.3125C14.1875 13.5625 14.0625 13.6875 13.875 13.9375C13.6875 14.125 13.5 14.1875 13.25 14.3125C13.0625 14.375 12.8125 14.5 12.3125 14.5C11.75 14.5 11.5625 14.5625 10.1875 14.5625C8.8125 14.5625 8.625 14.5625 8.0625 14.5C7.5625 14.5 7.3125 14.375 7.125 14.3125C6.875 14.1875 6.6875 14.125 6.5 13.9375C6.3125 13.75 6.1875 13.5625 6.125 13.3125C6.0625 13.125 6 12.875 5.9375 12.3125C5.9375 11.75 5.9375 11.625 5.9375 10.1875C5.9375 8.8125 5.9375 8.625 5.9375 8.0625C6 7.5625 6.0625 7.3125 6.125 7.125C6.25 6.875 6.375 6.6875 6.5 6.5C6.625 6.3125 6.875 6.1875 7.125 6.125C7.3125 6.0625 7.5625 5.9375 8.0625 5.9375C8.5625 5.9375 8.75 5.9375 9.75 5.9375ZM13 6.8125C12.6875 6.8125 12.375 7.0625 12.375 7.4375C12.375 7.8125 12.625 8.0625 13 8.0625C13.375 8.0625 13.625 7.8125 13.625 7.4375C13.625 7.0625 13.3125 6.8125 13 6.8125ZM10.1875 7.5C8.75 7.5 7.5 8.6875 7.5 10.1875C7.5 11.6875 8.6875 12.875 10.1875 12.875C11.6875 12.875 12.875 11.6875 12.875 10.1875C12.875 8.6875 11.6875 7.5 10.1875 7.5ZM10.1875 8.4375C11.125 8.4375 11.9375 9.1875 11.9375 10.1875C11.9375 11.1875 11.1875 11.9375 10.1875 11.9375C9.25 11.9375 8.4375 11.1875 8.4375 10.1875C8.4375 9.1875 9.25 8.4375 10.1875 8.4375Z"></path></svg>
+              </div>
+              <div class="mt-3">
+                <img class="xl:h-14 md:h-14 sm:h-14 lg:h-14 h-10 mt-3 w-36" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="" />
+                <img class="xl:h-14 md:h-14 sm:h-14 lg:h-14 h-10 w-36 mt-3 " src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="" />
+              </div>
+            </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="mt-7 xl:mt-10 sm:mt-8 lg:mt-10 md:mt-6  flex items-center justify-center w-full">
+        <div class="max-w-6xl w-11/12 ">
+            <hr class="h-1  w-full bg-gray-200">
+            <div class=" mt-7 font-sans text-xs xl:text-lg lg:text-lg sm:text-base md:text-base  text-gray-500">
+                By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
+                Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All
+                rights reserved.
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
